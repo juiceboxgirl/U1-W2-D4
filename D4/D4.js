@@ -158,8 +158,25 @@ const string = "che la forza sia con te";
 
 function upperFirst(string) {
   let splitString = string.split("");
-  let spliceString = splitString.splice(3, 1);
-  console.log(spliceString);
+  let upperString =
+    string.charAt(0).toUpperCase() +
+    string.slice(1, 3) +
+    " " +
+    string.charAt(4).toUpperCase() +
+    string.slice(5, 6) +
+    " " +
+    string.charAt(7).toUpperCase() +
+    string.slice(8, 12) +
+    " " +
+    string.charAt(13).toUpperCase() +
+    string.slice(14, 16) +
+    " " +
+    string.charAt(17).toUpperCase() +
+    string.slice(18, 20) +
+    " " +
+    string.charAt(21).toUpperCase() +
+    string.slice(22, 23);
+  console.log(upperString);
 }
 
 upperFirst(string);
@@ -171,6 +188,21 @@ upperFirst(string);
 
 console.log("------esercizio 9------");
 
+strink = "Twin suns";
+
+function cutString(strink) {
+  let slicestrink = strink.slice(1, 8);
+  console.log(slicestrink);
+}
+
+cutString(strink);
+
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
+
+let casualArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function giveMeRandom(n) {
+  randNum = Math.random(n);
+}
