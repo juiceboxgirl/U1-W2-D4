@@ -12,7 +12,7 @@ REGOLE
 console.log("------esercizio 1------");
 
 function area(l1, l2) {
-  let result = Math.floor((l1 * l2) / 2);
+  let result = Math.floor(l1 * l2);
   console.log("L'area del rettangolo è:", result);
 }
 
@@ -92,22 +92,17 @@ boundary(399);
 
 console.log("------esercizio 5------");
 
-str = "";
-str2 = str.split(" ");
-str3 = str2[0];
-
 function epify(str) {
-  if (str3 === "EPICODE") {
-    let result5 = str;
-    console.log(result5);
-  } else if (str3 !== "EPICODE") {
-    let result5 = "EPICODE" + " " + str;
-    console.log(result5);
+  let str2 = str.split(" ")[0];
+  if (str2 === "EPICODE") {
+    return str;
+  } else {
+    return "EPICODE" + " " + str;
   }
 }
 
-epify("EPICODE is amazing");
-epify("is awesome");
+console.log(epify("EPICODE is amazing"));
+console.log(epify("is awesome"));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -201,8 +196,14 @@ cutString(strink);
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
+console.log("------esercizio 10-------");
+
 let casualArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function giveMeRandom(n) {
-  randNum = Math.random(n);
+  //casualArray.from({length: 10}, ()
+  // Math.floor(Math.random() * 10));
+  //console.log(casualN);
 }
+
+giveMeRandom(3);
